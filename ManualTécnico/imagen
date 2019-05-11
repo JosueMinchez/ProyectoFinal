@@ -1,0 +1,6 @@
+Inicio
+    Imagen 
+    Imageb gifDado1(var Dado1)
+        Imagen "NumerosDados.gif"
+        return iconImage
+

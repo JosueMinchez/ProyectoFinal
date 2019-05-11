@@ -1,0 +1,32 @@
+Inicio
+    var vida
+    var defensa
+    var fila
+    var columna
+    var danyo
+    var probabilidad
+    var Aleatorio
+    
+    Icono de Imagen
+    var Icono veht
+
+
+  Enemigo(var vida,var danio, var defensa)
+        
+        Eso vida = vida
+        Eso defensa = defensa
+       daño = daño
+        probabilidad=100
+    
+
+     Cordenada
+        fila= random
+        columna= random
+
+
+        Aleatorio = random
+
+
+	 establecer Dano(var cantidad)
+        vida=vida-cantidad
+

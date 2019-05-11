@@ -1,0 +1,41 @@
+Inicio
+   
+    Lista Arreglo
+    
+    var simbolo
+    var nivel
+    var experiencia1
+    var experiencia
+    var ataque
+    var defensa
+    var punteria
+    var movesp
+    var ide
+
+    var aumentoT
+    var aumentoP
+    var aumentoD
+    var HP
+    var PP
+    var nickName
+    
+    var vehh
+    var veht
+
+
+    Abstracto nick_name(var nick)
+    Abstractocantidad_Ataque()
+    Abstracto cantidad_Punteria()
+    Abstractocantidad_Defensa()
+    Abstracto movimiento_especial()
+
+    Abstracto verDatos()
+    Abstracto hp()
+    Abstracto pp()
+    Abstracto setExperiencia()
+    Abstracto subida()
+    
+    Abstracto Establecer Dano(var cantidad)
+    Abstracto EstablecerObjetos(var ataque, var punteria, var defensa, var hp,var pp)
+    Abstracto imagen(int icono)
+Final

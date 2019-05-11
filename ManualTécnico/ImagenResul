@@ -1,0 +1,27 @@
+Inicio
+    Imagen
+    Icono
+        opcion (DadoR) 
+            caso 1:
+                Imagen 1 dado
+               descanso
+            caso 2:
+                imagen 2 dado
+                break;
+            caso 3:
+                imagen 3 dado
+                descansar
+            case 4:
+                imahen 4 dado
+                descansar
+            caso 5:
+                imagen 5 dado
+                descansar
+            caso 6:
+                imagen 6 dado
+                descansar
+            
+               descanso
+    
+    retorno imagen   
+Final

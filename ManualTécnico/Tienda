@@ -1,0 +1,296 @@
+Iniciar basketball
+      var probabilidad= math random
+      var resultado1 = math random
+      var resultado2 = math random
+      var resultado3 = math random
+      var resultado4 = math random
+      var resultado5 =  math random
+      var resultado6 = math random
+      var falta = math random
+      var anotacionJugador1 = 0
+      var anotacionJugador2 = 0
+      var tactica1
+      var tactica2
+      var tactica3
+      var tactica4
+      var turnos
+      var jugador1
+      var jugador2
+
+
+	Escribir "----INDICACIONES----"
+ Escribir "Este juego consiste en una partida de basketball.\n"
+                                
+ + "Cada jugador tiene diferentes tácticas ya sea para\n"
+                                 
++ "saltar y anotar como asi mismo defender, hacer falta\n"
+                                 
++ "y cobrar la falta. Los dos jugadores deben de ingresar su nombre\n"
+                                
+ + "y los turnos que jugaran cada uno. Los dos tendran la \n"
+                                 
++ "misma cantidad de turnos.\n"
+                                 
++ "***AL MOMENTO QUE SE TERMINEN LOS TURNOS GANA EL QUE TENGA MAYOR ANOTACION***"
+      
+        Escribir "Nombre Primer Jugador: "
+        leer (jugador1)
+        
+        Escribir "Nombre Segundo Jugador: "
+        leer (jugador2)
+        
+         Escribir "Cuantos turnos tendra cada jugador: "
+         leer (turnos)
+         
+         si(probabilidad <= 50){
+             Escribir jugador1 + ": Aataca\n" + jugador2 + ": Defiende\n"
+         sino
+             Escribir jugador1 + ": Defiende\n" + jugador2 + ": Ataca\n"
+	finsi
+         
+         mientras(turnos != 0)
+            turnos--;
+             Escibir "\n"
+	 finmientras
+             si(probabilidad<=50)
+                 Escribir jugador1 + " Cual es tu Táctica:"
+                Escribir "1: Salto Largo\n2: Salto Corto\n"
+                 leer (tactica1)
+                 
+                 Escribir jugador2 + " Cual es tu Táctica:"
+                 Escribir "1: Defensa Cuerpo a Cuerpo\n2: Defensa Fuerte\n"
+                 leer (tactica2)
+		finsi
+                 
+                 si(tactica1 == 1 && tactica2 == 1)
+                     si(resultado1<=65)
+                        anotacionJugador1 = anotacionJugador1 +3;
+                         Escribir "ANOTASTE " + jugador1
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                      si entonces(resultado1 <= 35)
+                         Escribir "FALTA!!!"
+                         Escribir "Tiro LIbre"
+		      finsi
+		      finsi
+                         si(falta<= 90)
+                            anotacionJugador1 = anotacionJugador1 +2
+                            Escribir "ANOTASTE " + jugador1
+                            Escribir "Turnos Restantes: " + turnos
+                            Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                            
+                          si entonces
+                             Escribir "Fallaste " + jugador1
+                             Escribir "Turnos Restantes: " + turnos
+                             Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                             
+                         
+                      si entonces
+                         Escribir "Fallaste " + jugador1);
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                         
+                     
+                 si entonces(tactica1 == 1 y tactica2 == 2)
+                     si(resultado2 <= 65)
+                        anotacionJugador1 = anotacionJugador1 +3
+                         Escribir "ANOTASTE " + jugador1
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                     si entonces(resultado2 <= 65)
+                         Escribir "FALTA!!!"
+                         Escribir "Tiro LIbre"
+                         si(falta<= 90)
+                            anotacionJugador1 = anotacionJugador1 +2
+                            Escribir "ANOTASTE " + jugador1
+                            Escribir "Turnos Restantes: " + turnos
+                            Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                            
+                         si mientras
+                             Escribir"Fallaste " + jugador1
+                             Escribir "Turnos Restantes: " + turnos
+                             Escribir"Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                             
+                         
+                     si entonces
+                         Escribir "Fallaste " + jugador1
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                         
+                     
+                   si entonces(tactica1 == 2 && tactica2 == 1)
+                        si(resultado3 <= 80)
+                        anotacionJugador1 = anotacionJugador1 + 2
+                         Escribir "ANOTASTE " + jugador1
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                     si mientras(resultado3 <= 35)
+                         Escribir "FALTA!!!"
+                         Escribir "Tiro LIbre"
+		     finsi
+                         si(falta<= 90)
+                            anotacionJugador1 = anotacionJugador1 +2
+                            Escribir "ANOTASTE " + jugador1
+                            Escribir "Turnos Restantes: " + turnos
+                            Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                            
+                         entonces
+                             Escribir "Fallaste " + jugador1
+                             Escribir "Turnos Restantes: " + turnos
+                             Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                             
+                     entonces
+                         Escribir "Fallaste " + jugador1
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                         
+                 entonces
+                       si(resultado4 <= 80)
+                        anotacionJugador1 = anotacionJugador1 + 2
+                         Escribir "ANOTASTE " + jugador1
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                       si entinces(resultado4 <= 65)
+                         Escribir "FALTA!!!"
+                         Escribir "Tiro LIbre"
+                         if(falta<= 90){
+                            anotacionJugador1 = anotacionJugador1 +2;
+                            Escribir "ANOTASTE " + jugador1
+                            Escribir "Turnos Restantes: " + turnos
+                            Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                            
+                         entonces
+                             Escribir "Fallaste " + jugador1
+                             Escribir "Turnos Restantes: " + turnos
+                             Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                             
+                     entonces
+                         Escribir "Fallaste " + jugador1
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+		      finsi
+		      finsi
+		      finsi
+	              finsi
+		      finsi	
+                         
+                     
+                   
+                //TURNO JUGADOR2 
+                
+                turnos--;
+                 Escribir "\n" + jugador1 + " Defiende\n" + jugador2 + " Ataca"
+                 Escribir jugador2 + " Cual es tu Táctica:"
+                 Escribir "1: Salto Largo\n2: Salto Corto\n"
+                 leer (tactica3)
+                 
+                 Escribir jugador1 + " Cual es tu Táctica:
+                 Escribir "1: Defensa Cuerpo a Cuerpo\n2: Defensa Fuerte\n"
+                 leer (tactica4)
+                 
+                 si(tactica3 == 1 && tactica4 == 1)
+                     si(resultado3<=65)
+                        anotacionJugador2 = anotacionJugador2 +3
+                         Escribir "ANOTASTE " + jugador2
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                     si entonces(resultado3 <= 65)
+                         Escribir "FALTA!!!"
+                         Escribir "Tiro LIbre"
+                         si(falta<= 90)
+                            anotacionJugador2 = anotacionJugador2 +2
+                            Escribir "ANOTASTE " + jugador2
+                            Escribir "Turnos Restantes: " + turnos
+                            Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                            
+                         entonces
+                             Escribir "Fallaste " + jugador2
+                             Escribir "Turnos Restantes: " + turnos
+                             Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                             
+                       entonces
+                         Escribir "Fallaste " + jugador2
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                         
+                  si entonces(tactica3 == 1 && tactica4 == 2)
+                     si(resultado4 <= 65)
+                        anotacionJugador2 = anotacionJugador2 +3
+                         Escribir "ANOTASTE " + jugador2
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                     si entonces(resultado4 <= 35)
+                         Escribir "FALTA!!!"
+                         Escribir "Tiro LIbre"
+                         si(falta<= 90)
+                            anotacionJugador2 = anotacionJugador2 +2
+                            Escribir "ANOTASTE " + jugador2
+                            Escribir "Turnos Restantes: " + turnos
+                            Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                            
+                         entonces
+                             Escribir "Fallaste " + jugador2
+                             Escribir "Turnos Restantes: " + turnos
+                             Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                             
+                     si entonces
+                         Escribir "Fallaste " + jugador2
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                         
+                   si entonces
+			(tactica3 == 2 && tactica4 == 1)
+                        si(resultado5 <= 80)
+                        anotacionJugador1 = anotacionJugador1 + 2
+                         Escribir "ANOTASTE " + jugador1
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                    si entonces(resultado5 <= 65)
+                         Escribir "FALTA!!!"
+                         Escribir "Tiro LIbre"
+                         si(falta<= 90)
+                            anotacionJugador2 = anotacionJugador2 +2
+                            Escribir "ANOTASTE " + jugador2
+                            Escribir "Turnos Restantes: " + turnos
+                            Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                            
+                         entonces
+                             Escribir "Fallaste " + jugador2
+                             Escribir "Turnos Restantes: " + turnos
+                             Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                             
+                     entonces
+                         Escribir "Fallaste " + jugador2
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                         
+                  entonces
+                       si(resultado6 <= 80)
+                        anotacionJugador2 = anotacionJugador2 + 2
+                         Escribir "ANOTASTE " + jugador2
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                   si entonces(resultado6 <= 35) 
+                         Escribir "FALTA!!!"
+                         Escribir "Tiro LIbre"
+                         si(falta<= 90)
+                            anotacionJugador2 = anotacionJugador2 +2
+                            Escribir "ANOTASTE " + jugador2
+                            Escribir "Turnos Restantes: " + turnos
+                            Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                            
+                        entonces
+                             Escribir "Fallaste " + jugador2
+                             Escribir "Turnos Restantes: " + turnos
+                             Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                             
+                    entonces
+                         Escribir "Fallaste " + jugador2
+                         Escribir "Turnos Restantes: " + turnos
+                         Escribir "Marcador\n" + jugador1 + ": " + anotacionJugador1 + "\n" + jugador2 + ": " + anotacionJugador2
+                         finsi
+			 finsi
+			finsi
+			finsi
+			finsi
+Fin

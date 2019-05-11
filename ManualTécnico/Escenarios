@@ -1,0 +1,67 @@
+Inicio Ahorcado1 
+
+        var palabra;
+
+	Escribir "----INDICACIONES----"
+ Escribir "Este juego consiste en adivinar las letras\n"
+                                 
++ "de una palabra ingresada por un jugador\n"
+                                 
++ "El jugador que se encargara de encontrar las\n"
+                                 
++ "letras tendra todas las posibles oportunidades\n"
+                                
++ "hasta encotrar la palabra completa.");
+	
+	
+	Escribir "Escribe una palabra: "
+        leer (palabra)
+
+
+	Escribir""
+	Escribir""
+	Escribir""
+	Escribir""
+	Escribir""
+	Escribir""
+	Escribir""
+	Escribir""
+	Escribir""
+	Escribir""
+	Escribir""
+	Escribir""
+	Escribir""
+	Escribir""
+	Escribir""
+	Escribir""
+	Escribir""
+
+        
+        caracter [] letras = palabra para caracter
+        caracter[] guiones = nuevo caracter[letras.longuitud];
+        
+        para(int i= 0; i<letras longitud; i++)
+            guiones[i]= '_';   
+	finpara    
+          
+        Escribir (guiones)
+        
+        mientras(arreglos iguales == false)
+        Escribir "Introduce una letra: "
+        caracter letrasUsadas = caracter art
+	finmientras
+        
+        para(int i=0; i<letras longitud; i++)
+        si(letras[i]==letrasUsadas)
+            guiones[i]=letrasUsadas  
+           
+	finpara
+	finsi
+                
+        Escribir (guiones)
+       
+        si(erreglos iguales)
+            Escribir "****¡HAS ENCONTRADO LA PALABRA!****"
+	finsi
+Fin
+                

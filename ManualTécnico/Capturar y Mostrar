@@ -1,0 +1,16 @@
+Inicio
+Capturar                                      
+      
+        Establecer nombre Vehi1
+        Establecer daño vehi1
+        Mensaje "DATOS INGRESADOS CORRECTAMENTE"
+        
+        Establecer nombre
+        Establecer daño
+        
+                                      
+
+Mostrar                                      
+
+        temp = temp +obtener nombre + "                                            " + obtener daño + 
+        mandar a un area texto

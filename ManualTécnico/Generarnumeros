@@ -1,0 +1,11 @@
+Inicio
+    var iValorTirada
+
+   var calcularnumero
+
+    rGenerador = random 
+ 
+    iValorTirada =Genear numeros 
+
+    retornar iValorTirada
+ Fin

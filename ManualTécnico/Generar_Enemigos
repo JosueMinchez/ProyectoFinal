@@ -1,0 +1,23 @@
+Inicio
+
+   Arreglo enemigo = arreglo
+
+    var probabilidad
+
+	Genera_Enemigos
+        probabilidad=100
+        casillo 0= Enemigo(60,12,25)
+        casilla 1=  Enemigo(70,10,20)
+        casilla2 =  Enemigo(75,8,30)
+        
+        casilla 0.vehh = imagen
+        casilla veht = n
+	obtener imagen y posición
+        casilla vehh = imagen
+        casilla veht = imagen
+        
+        casilla vehh = imagen
+        casilla vht = imagen
+
+Final
+

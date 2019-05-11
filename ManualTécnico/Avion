@@ -1,0 +1,62 @@
+Inicio
+
+
+        nivel=1
+        ide = 8
+        cantidad_Ataque
+        cantidad_Defensa
+        cantidad_Punteria
+        hp
+        pp
+        movimiento_especial
+
+
+	var nick
+        Escribir "Que nickname deseas asignarle"
+        nickName= nick
+
+	 hp
+        HP=50*nivel
+	 pp
+        PP=3+2*nivel
+
+
+	EstablecerExperiencia
+        experiencia1=random
+        experiencia=experiencia+experiencia1
+        subida
+
+
+	cantidad_Ataque
+        ataque= 8+2*nivel+aumentoT
+
+	cantidad_Punteria
+        punteria= 59.5+0.5*nivel+aumentoP
+
+    public void cantidad_Defensa
+        defensa=5+nivel;
+    
+
+	 movimiento_especial
+        movesp=2*ataque+aumentoD
+        PP= PP-4
+	verDatos(){
+        return "Ataque: "+ataque+"\nDefensa: "+defensa+"\nPunteria: "+punteria;
+
+	subida
+        si (experiencia>(100*nivel))
+            Escribir "Acabas de subir de nivel"
+            nivel++
+            Escribir "Nievel: "+nivel
+
+	Establecer Dano(var cantidad)
+        HP=HP-cantidad
+        
+	EstablecerObjetos(var ataque, var punteria, var defensa, var hp,var pp)
+       ese ataque = ese ataque + ataque
+        esa punteria = esa punteria + punteria
+        esa defensa = esa defensa + defensa
+        HP = HP + hp
+        PP = PP+pp
+
+Final

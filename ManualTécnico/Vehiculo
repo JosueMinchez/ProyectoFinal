@@ -1,0 +1,25 @@
+Inicio
+    var Nombre
+    var Daño
+    
+ Vehiculo()
+    
+
+	Vehiculo(var Nombre, var Daño) 
+        Nombre = Nombre
+        Daño = Daño
+
+	Establecer Nombre(var Nombre) 
+        Nombre = Nombre;
+
+    var obtener Nombre
+        return Nombre
+
+    
+	Establecer Daño(var Daño) 
+        Daño = Daño;
+
+
+	var getDaño
+        return Daño
+Final
